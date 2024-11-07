@@ -109,12 +109,10 @@ a {
     color: #404bbf;
 }
 
-.page-footer {
-    background-color: #2e2f42;
-}
 
 .hero-section {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 
 .hero-title {
@@ -123,7 +121,10 @@ a {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #fff;}
+    color: #fff;
+    width: 496px;
+    margin: 0 auto 48px auto;
+}
 
 .hero-btn {
     font-family: "Roboto", sans-serif;
@@ -134,6 +135,12 @@ a {
     color: #fff;
     background-color: #4d5ae5;
     cursor: pointer; 
+    border-radius: 4px;
+    padding: 16px 32px;
+    /*width: 169px;
+    height: 56px;*/
+    margin: 0 auto;
+    display: block;
 }
     
 .hero-btn:hover,
@@ -141,6 +148,12 @@ a {
     background-color: #404bbf;
 }
   
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
 .title {
     font-weight: 700;
     font-size: 36px;
@@ -149,6 +162,7 @@ a {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
         
 .subtitle {
@@ -156,9 +170,15 @@ a {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
+    
+    color: #2e2f42;    
+    margin-bottom: 8px;
 }
+/*.subtitle-team {
+    margin-top: 32px;
+    text-align: center;
+    text-align: left;*/
+
 
 .text {
     font-weight: 400;
@@ -167,14 +187,60 @@ a {
     letter-spacing: 0.02em;
     color: #434455;
 }
-.footer-text {
-    color: #f4f4fd;
+
+.benefits-list {
+    display: flex;
+    gap: 24px;    
 }
+
+.benefits-item {
+    width: calc((100%-3*24px)/4);
+}
+
+
 
 .section-team {
     background-color: #f4f4fd;
 }
 
-.team-item {
-background-color: #fff;
+.team-list {
+    display: flex;
+    gap: 24px;
 }
+
+.team-item {
+border-radius: 0 0 4px 4px;
+background-color: #fff;
+width: calc((100%-24px)/4);
+}
+.team-card-content {
+    margin: 32px 16px;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+.portfolio-card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-card-content {
+    border-bottom: 1px solid #e7e9fc;
+        border-left: 1px solid #e7e9fc;
+        border-right: 1px solid #e7e9fc;
+        padding: 32px 16px;
+}
+
+.page-footer {
+    background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-text {
+    color: #f4f4fd;
+    width: 264px;
+    margin-top: 16px;
+}
+
