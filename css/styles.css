@@ -22,6 +22,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
 /* comon */
 .container {
     max-width: 1158px;
@@ -122,7 +126,7 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    width: 496px;
+    max-width: 496px;
     margin: 0 auto 48px auto;
 }
 
@@ -137,10 +141,11 @@ a {
     cursor: pointer; 
     border-radius: 4px;
     padding: 16px 32px;
-    /*width: 169px;
-    height: 56px;*/
+    min-width: 169px;
+    height: 56px;
     margin: 0 auto;
     display: block;
+    border: none;
 }
     
 .hero-btn:hover,
@@ -188,6 +193,19 @@ a {
     color: #434455;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .benefits-list {
     display: flex;
     gap: 24px;    
@@ -214,15 +232,20 @@ background-color: #fff;
 width: calc((100%-24px)/4);
 }
 .team-card-content {
-    margin: 32px 16px;
+    /*margin: 32px 16px;*/
     text-align: center;
-    padding-bottom: 3px;
+    /*padding-bottom: 3px;*/
+    padding: 32px 0;
 }
 
 .portfolio-card-set {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
+}
+
+.portfolio-item {
+    width: calc((100%-48px)/3);
 }
 
 .portfolio-card-content {
@@ -238,9 +261,13 @@ width: calc((100%-24px)/4);
     padding-bottom: 100px;
 }
 
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .footer-text {
     color: #f4f4fd;
     width: 264px;
-    margin-top: 16px;
 }
 
